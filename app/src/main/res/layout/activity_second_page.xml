@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/teal_500"
+    android:orientation="vertical"
+    tools:context=".View.Activity.SecondPageActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q 2 :Who is  the best cricketer in the world ? "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:paddingStart="10dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/sachin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Sachin Tendulkar"
+                        android:checked="true"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/virat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="   Virat Kolli"
+                        android:checked="false"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/adam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+
+                        android:text="  Adam Gilchirst"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/jacques"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="  Jacques Kallis"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:text=" Next Page ->"
+                android:textSize="15sp"
+                android:id="@+id/next"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
